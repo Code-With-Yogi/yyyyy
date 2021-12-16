@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Sunshine Hospital</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ---------nav bar----------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark position-sticky top=0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SunShine hospital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doctors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Patient
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <!-- sign and sign up  -->
+                <div class="mx-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop2">
+                        SignUp
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Button trigger modal -->
+
+
+    <!--Sign up modal Modal -->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel1">Sign-Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <body class="text-center" data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="">
+
+                        <main class="form-signin">
+                            <form>
+                                <img class="mb-4" src="../img/about1.jpg" alt="" width="72"
+                                    height="57">
+                                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                                <div class="form-floating">
+                                    <input type="email" class="form-control my-2" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+
+                                <div class="checkbox mb-3">
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Remember me
+                                    </label>
+                                </div>
+                                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                                <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+                            </form>
+                        </main>
+
+
+
+
+
+                    </body>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- log in modal Modal -->
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel1">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------crousal---------- -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/1.jpg" class="d-block w-100 img-fluid" height="700px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to Sunshine hospitstal</h3>
+                    <p>We care about your health </p>
+
+                    <button class="btn btn-danger btn-md">SURGICAL CENTRE</button>
+                    <button class="btn btn-info">MEDICAL CENTRE</button>
+                    <button class="btn btn-success">CRITICAL CENTRE</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/2.jpg" class="d-block w-100 img-fluid" height="700px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Comefortable beds with clean environment</h3>
+                    <p>More than 100+ Beds in your services </p>
+
+                    <button class="btn btn-danger">SURGICAL CENTRE</button>
+                    <button class="btn btn-info">MEDICAL CENTRE</button>
+                    <button class="btn btn-success">CRITICAL CENTRE</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/3.jpg" class="d-block w-100 img-fluid" height="700px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Best Doctors in City </h3>
+                    <p>24/7 available in your service</p>
+
+                    <button class="btn btn-danger">SURGICAL CENTRE</button>
+                    <button class="btn btn-info">MEDICAL CENTRE</button>
+                    <button class="btn btn-success">CRITICAL CENTRE</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- ----------container------------------  -->
+    <div class="container my-4">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-5 ">
+            <div class="col-md-3 mx-4">
+                <div class="card shadow-sm">
+                    <img src="../img/thumb1.jpg" alt="" srcset="">
+
+                    <div class="card-body">
+                        <p class="card-text">Dr. Gaurav Mantri <br>
+                            MD (Medicine) <br>
+                            Department <br>
+                            Oncology <br><br>
+
+                            Expertise <br>
+                            Breast, Prostate, colon and Lung Cancer, Lymphoma and Myeloma. <br> <br>
+
+                            Experience | Interest | Achievement <br>
+                            Ex Assistant Professor, Nair Hospital, Mumbai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group ">
+                                <button type="button" onclick="alert('Do you wnt to book appoinment')"
+                                    class="btn btn-sm btn-outline-primary mx-2  ">Appoinment</button>
+                                <a href="tel:+919834044854" class="btn btn-sm btn-outline-primary">Inquiary</a>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-10 mx-4">
+                <div class="card shadow-sm">
+                    <img src="../img/thumb2.jpg" alt="" srcset="">
+
+                    <div class="card-body">
+                        <p class="card-text">Dr. Gaurav Mantri <br>
+                            MD (Medicine) <br>
+                            Department <br>
+                            Oncology <br><br>
+
+                            Expertise <br>
+                            Breast, Prostate, colon and Lung Cancer, Lymphoma and Myeloma. <br> <br>
+
+                            Experience | Interest | Achievement <br>
+                            Ex Assistant Professor, Nair Hospital, Mumbai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" onclick="alert('Do you wnt to book appoinment')"
+                                    class="btn btn-sm btn-outline-primary mx-2">Appoinment</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Inquiary</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-5">
+                <div class="card shadow-sm">
+                    <img src="../img/thumb3.jpg" alt="" srcset="">
+
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Dr. Gaurav Mantri</strong> <br>
+                            MD (Medicine) <br>
+                            Department <br>
+                            Oncology <br><br>
+
+                            Expertise <br>
+                            Breast, Prostate, colon and Lung Cancer, Lymphoma and Myeloma. <br> <br>
+
+                            Experience | Interest | Achievement <br>
+                            Ex Assistant Professor, Nair Hospital, Mumbai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" onclick="alert('Do you wnt to book appoinment')"
+                                    class="btn btn-sm btn-outline-primary mx-2">Appoinment</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Inquiary</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-3 mx-5 my-5">
+                <div class="card shadow-sm">
+                    <img src="../img/thumb4.jpg" width="100%" height="225" alt="" srcset="">
+
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Dr. Gaurav Mantri</strong> <br>
+                            MD (Medicine) <br>
+                            Department <br>
+                            Oncology <br><br>
+
+                            Expertise <br>
+                            Breast, Prostate, colon and Lung Cancer, Lymphoma and Myeloma. <br> <br>
+
+                            Experience | Interest | Achievement <br>
+                            Ex Assistant Professor, Nair Hospital, Mumbai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" onclick="alert('Do you wnt to book appoinment')"
+                                    class="btn btn-sm btn-outline-primary mx-2">Appoinment</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Inquiary</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-3 mx-4 my-5">
+                <div class="card shadow-sm">
+                    <img src="../img/thumb5.jpg" width="100%" height="225" alt="" srcset="">
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Dr. Gaurav Mantri</strong> <br>
+                            MD (Medicine) <br>
+                            Department <br>
+                            Oncology <br><br>
+
+                            Expertise <br>
+                            Breast, Prostate, colon and Lung Cancer, Lymphoma and Myeloma. <br> <br>
+
+                            Experience | Interest | Achievement <br>
+                            Ex Assistant Professor, Nair Hospital, Mumbai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" onclick="alert('Do you wnt to book appoinment')"
+                                    class="btn btn-sm btn-outline-primary mx-2">Appoinment</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Inquiary</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-3 mx-5 my-5">
+                <div class="card shadow-sm">
+                    <img src="../img/thumb6.jpg" width="100%" height="225" alt="" srcset="">
+
+                    <div class="card-body">
+                        <p class="card-text"> <strong>Dr. Gaurav Mantri</strong><br>
+                            MD (Medicine) <br>
+                            Department <br>
+                            Oncology <br><br>
+
+                            Expertise <br>
+                            Breast, Prostate, colon and Lung Cancer, Lymphoma and Myeloma. <br> <br>
+
+                            Experience | Interest | Achievement <br>
+                            Ex Assistant Professor, Nair Hospital, Mumbai.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" onclick="alert('Do you wnt to book appoinment')"
+                                    class="btn btn-sm btn-outline-primary mx-2">Appoinment</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Inquiary</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="container-fluid p-5 bg-secondary">
+            <div class="call-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <li><b>
+                                    <h5>Sunshine Information</h5>
+                                </b></li>
+
+                            <li>Facilities</li>
+                            <li> Our Doctors</li>
+                            <li>Infrastructure</li>
+                            <li> Insurance</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li><b>
+                                    <h5>Contact</h5>
+                                </b></li>
+                            <li> Contact Us</li>
+                            <li>Maps and Directions</li>
+                            <li> Events</li>
+                            <li> Blog</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li><b>
+                                    <h5>About</h5>
+                                </b></li>
+                            <li>Chairperson's Message</li>
+                            <li>Our Pledge</li>
+                            <li> Discover our Logo</li>
+                            <li>Our Values</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
